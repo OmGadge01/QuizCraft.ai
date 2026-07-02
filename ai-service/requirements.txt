@@ -1,0 +1,43 @@
+# ==========================
+# Web API
+# ==========================
+fastapi
+uvicorn[standard]
+
+# ==========================
+# Configuration
+# ==========================
+python-dotenv
+pydantic
+pydantic-settings
+
+# ==========================
+# LangChain
+# ==========================
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+
+# ==========================
+# PDF Processing
+# ==========================
+pypdf
+
+# ==========================
+# Embeddings
+# ==========================
+sentence-transformers
+
+# ==========================
+# Vector Database
+# ==========================
+qdrant-client
+langchain-qdrant
+
+# ==========================
+
+# Utilities
+# ==========================
+requests
+loguru
