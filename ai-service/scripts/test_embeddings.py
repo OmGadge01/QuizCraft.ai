@@ -1,3 +1,6 @@
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 from app.parser.service import PDFService
 from app.splitter.service import TextSplitterService
 from app.embeddings.service import EmbeddingService
@@ -9,7 +12,7 @@ def main():
     splitter = TextSplitterService()
     embedding_service = EmbeddingService()
 
-    documents = pdf_service.load_pdf("storage/notes/java.pdf")
+    documents = pdf_service.load_pdf("storage/java/Java Interview Prep.pdf")
 
     chunks = splitter.split(documents)
 
