@@ -10,7 +10,9 @@ class LLMService:
         self.llm = ChatOllama(
             model=settings.OLLAMA_MODEL,
             base_url=settings.OLLAMA_BASE_URL,
-            temperature=0,
+            temperature=settings.OLLAMA_TEMPERATURE,
+            top_p=settings.OLLAMA_TOP_P,
+            num_ctx=settings.OLLAMA_NUM_CTX,
         )
 
     def generate(self, prompt) -> str:

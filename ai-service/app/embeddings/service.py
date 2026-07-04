@@ -11,3 +11,6 @@ class EmbeddingService:
     def embed_documents(self, documents):
         texts = [doc.page_content for doc in documents]
         return self.model.embed_documents(texts)
+
+    def embed_query(self, query: str):
+        return self.model.embed_query(query)
